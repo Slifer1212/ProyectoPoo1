@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ProyectoPoo1.Views.MainWindow"
+        Title="MainWindow" Width="300" Height="425"
+        Background = "white"
+        >
+        
+    <Grid>
+        <TextBlock x:Name="WelcomeText" Text="Welcome my wheather app"  Margin="60,60,0,0" Foreground="Black" />
+        <Button x:Name="StartButton" HorizontalContentAlignment="Center" Content="Start" Width="100" Height="30" Margin="100,-50,0,0" Background="Black" Foreground="White" Click="StartButton_Click"/>
+
+        <TextBlock x:Name="InfoBlock" Text="Slifer.Dev" Margin="40,305,0,0" Foreground="Black" />  
+        <StackPanel Orientation="Horizontal" Margin="0,200,0,0">
+            <Image Source="avares://ProyectoPoo1/Assets/OIP (1).jpeg" Width="40"/>
+            <Button x:Name="IgButton" Background="transparent" Margin = "-40" Width="40" Height="40" Click="IgButton_Click"/>
+        </StackPanel>
+
+        <TextBlock x:Name="WsText" Text="Contact Me" Margin="42,355,0,0" Foreground="Black"/> 
+        <StackPanel Orientation="Horizontal" Margin="-5,300,0,0">
+            <Image Source="avares://ProyectoPoo1/Assets/R.png" Width="50"/>
+            <Button x:Name="WsButton" Background="transparent" Width="40" Margin= "-45" Height="40" Click="WsButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
